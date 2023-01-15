@@ -10,8 +10,9 @@
       src="https://kit.fontawesome.com/e7fefb7d4b.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
-  <body>
+  <body class="">
     <section id="landing">
       <nav>
         <div class="nav__container">
@@ -21,6 +22,28 @@
             <li><a href="#" class="nav__link">Contact</a></li>
             <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
           </ul>
+
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a class="menu__link" href="#" onclick="closeMenu()">Home</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link" href="#features" onclick="closeMenu()"
+                  >Books</a
+                >
+              </li>
+              <li class="menu__list">
+                <a class="menu__link no-cursor" href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <header>
@@ -33,7 +56,9 @@
               Find your dream book with
               <span class="text--purple">Library</span>
             </h2>
-            <button class="header__btn">Browse Books</button>
+            <a href="#features">
+              <button class="header__btn">Browse Books</button>
+            </a>
           </div>
           <figure class="header__img--wrapper">
             <img class="header__img" src="./assets/Undraw_Books.svg" alt="" />
@@ -186,17 +211,11 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
                 </div>
-                <div class="book__price">
-                  $59.95
-                </div>
+                <div class="book__price">$59.95</div>
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img
-                    class="book__img"
-                    src="./assets/book-2.jpeg"
-                    alt=""
-                  />
+                  <img class="book__img" src="./assets/book-2.jpeg" alt="" />
                 </figure>
                 <div class="book__title">Be Obsessed Or Be Average</div>
                 <div class="book__ratings">
@@ -206,17 +225,11 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
                 </div>
-                <div class="book__price">
-                   $24.95
-                </div>
+                <div class="book__price">$24.95</div>
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img
-                    class="book__img"
-                    src="./assets/book-3.jpeg"
-                    alt=""
-                  />
+                  <img class="book__img" src="./assets/book-3.jpeg" alt="" />
                 </figure>
                 <div class="book__title">Rich Dad Poor Dad</div>
                 <div class="book__ratings">
@@ -242,9 +255,7 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
                 </div>
-                <div class="book__price">
-                  $54.95
-                </div>
+                <div class="book__price">$54.95</div>
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
@@ -258,13 +269,15 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
                 </div>
-                <div class="book__price">
-                  $14.95
-                </div>
+                <div class="book__price">$14.95</div>
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img class="book__img" src="./assets/david goggins.jpeg" alt="" />
+                  <img
+                    class="book__img"
+                    src="./assets/david goggins.jpeg"
+                    alt=""
+                  />
                 </figure>
                 <div class="book__title">Can't Hurt Me</div>
                 <div class="book__ratings">
@@ -290,9 +303,7 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
                 </div>
-                <div class="book__price">
-                  $59.95
-                </div>
+                <div class="book__price">$59.95</div>
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
@@ -306,9 +317,7 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
                 </div>
-                <div class="book__price">
-                 $59.95
-                </div>
+                <div class="book__price">$59.95</div>
               </div>
             </div>
           </div>
@@ -321,7 +330,10 @@
               Explore more <span class="text--purple">Books</span>
             </h2>
             <div class="explore__button--wrapper">
-              <button class="explore__button">Browse books</button>
+              <a href="#features">
+                <button class="explore__button">Browse books</button>
+              </a>
+              
             </div>
           </div>
         </div>
@@ -333,7 +345,11 @@
         <div class="row row__column">
           <a href="#">
             <figure class="footer__logo">
-              <img class="footer__logo--img" src="./assets/Library.svg" alt="">
+              <img
+                class="footer__logo--img"
+                src="./assets/Library.svg"
+                alt=""
+              />
             </figure>
           </a>
           <div class="footer__list">
@@ -342,7 +358,7 @@
             <a href="" class="footer__link">Books</a>
             <a href="" class="footer__link no-cursor">Contact</a>
           </div>
-          <div class="footer__copyright"> Copyright &copy; 2023 Libary</div>
+          <div class="footer__copyright">Copyright &copy; 2023 Libary</div>
         </div>
       </div>
     </footer>
